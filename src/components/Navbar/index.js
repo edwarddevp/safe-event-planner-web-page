@@ -5,7 +5,7 @@ import { useHeaderScroll } from "../hooks/useHeaderScrooll";
 
 export const Navbar = ({ containerRef }) => {
   const [bg, ref] = useHeaderScroll(containerRef);
-  console.log(bg);
+
   return (
     <Flex
       ref={ref}

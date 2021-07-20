@@ -31,6 +31,7 @@ export const Hero = () => (
         <a
           href="https://mega.nz/file/McxyCIIa#HR138HWbUPfL96e8P7fP-5LByNT4IDsBFmuXRq9DscM"
           target="_blank"
+          rel="noreferrer"
         >
           Descarga la aplicacion aqui
         </a>

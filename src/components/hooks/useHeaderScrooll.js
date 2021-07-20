@@ -5,19 +5,20 @@ export const useHeaderScroll = (containerRef) => {
   const headerRef = useRef(null);
 
   useEffect(() => {
-    if (containerRef.current) {
+    const container = containerRef.current;
+    if (container) {
       const listenScrollEvent = (e) => {
-        if (containerRef.current.scrollTop > 100) {
+        if (container.scrollTop > 100) {
           setHeaderBg("rgb(0,0,0,0.8)");
         } else {
           setHeaderBg("transparent");
         }
       };
 
-      containerRef.current.addEventListener("scroll", listenScrollEvent);
+      container.addEventListener("scroll", listenScrollEvent);
 
       return () => {
-        containerRef.current.removeEventListener("scroll", listenScrollEvent);
+        container.removeEventListener("scroll", listenScrollEvent);
       };
     }
   }, [headerRef, containerRef]);
