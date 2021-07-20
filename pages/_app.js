@@ -1,4 +1,5 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import "react-perfect-scrollbar/dist/css/styles.css";
 
 const colors = {
   primary: {
