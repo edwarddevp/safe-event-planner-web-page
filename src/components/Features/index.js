@@ -4,6 +4,7 @@ import React from "react";
 import { MdEvent, MdPhoneAndroid } from "react-icons/md";
 import { FaShieldAlt } from "react-icons/fa";
 import { FeatureItem } from "../FeatureItem";
+import FeatureImg from "../../../public/images/feature-img.jpg";
 
 export const Features = () => {
   const features = [
@@ -58,8 +59,9 @@ export const Features = () => {
         <Container maxW="container.lg">
           <Grid placeItems="center" h="100%">
             <Image
-              src="/images/feature-img.jpg"
+              src={FeatureImg}
               alt="App Feature Image"
+              placeholder="blur"
               width={800}
               height={550}
             />

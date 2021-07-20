@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button, Grid, Text } from "@chakra-ui/react";
 import styles from "../../../styles/Home.module.css";
+import heroBg from "../../../public/images/hero-bg.jpg";
 
 export const Hero = () => (
   <Grid
@@ -38,7 +39,8 @@ export const Hero = () => (
       </Button>
     </Grid>
     <Image
-      src="/images/hero-bg.jpg"
+      src={heroBg}
+      placeholder="blur"
       alt="hero image"
       layout="fill"
       objectFit="cover"

@@ -4,8 +4,17 @@ import { Navbar } from "../src/components/Navbar";
 import styles from "../styles/Home.module.css";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import { useRef } from "react";
-import { About } from "../src/components/about";
-import { Features } from "../src/components/Features";
+import dynamic from "next/dynamic";
+// import { About } from "../src/components/About";
+// import { Features } from "../src/components/Features";
+
+const About = dynamic(() =>
+  import("../src/components/About").then((mod) => mod.About)
+);
+
+const Features = dynamic(() =>
+  import("../src/components/Features").then((mod) => mod.Features)
+);
 
 export default function Home() {
   const containerRef = useRef(null);
