@@ -28,7 +28,7 @@ export const Features = () => {
     },
   ];
   return (
-    <Grid gap={[8, , , , , 16]} p={[0, , , 16, , 24]}>
+    <Grid gap={[8, , , , , 16]} p={[4, , , 16, , 24]}>
       <Text
         fontSize="3xl"
         textShadow="md"

@@ -1,15 +1,11 @@
 import { Flex, Grid, Spacer, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import { useHeaderScroll } from "../hooks/useHeaderScrooll";
 
-export const Navbar = ({ containerRef }) => {
-  const [bg, ref] = useHeaderScroll(containerRef);
-
+export const Navbar = ({ headerBg }) => {
   return (
     <Flex
-      ref={ref}
-      bg={bg}
+      bg={headerBg}
       h="72px"
       w="100%"
       position="fixed"
@@ -28,7 +24,7 @@ export const Navbar = ({ containerRef }) => {
       <Text
         ml={4}
         color="white"
-        fontSize="2xl"
+        fontSize={["xl", , , , , "2xl"]}
         textShadow="md"
         fontWeight="500"
         fontFamily="Noto Sans JP, sans-serif"

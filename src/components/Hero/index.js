@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { Button, Grid, Text } from "@chakra-ui/react";
 import styles from "../../../styles/Home.module.css";
-import heroBg from "../../../public/images/hero-bg.jpg";
 
 export const Hero = () => (
   <Grid
@@ -10,11 +9,12 @@ export const Hero = () => (
     justifyContent="center"
     alignContent="center"
     position="relative"
+    bg="gray.900"
   >
-    <Grid zIndex={1} justifyItems="center" gap={4}>
+    <Grid zIndex={1} justifyItems="center" gap={8}>
       <Text
         color="white"
-        fontSize="5xl"
+        fontSize={["4xl", , , "5xl"]}
         textShadow="md"
         fontWeight="500"
         fontFamily="Noto Sans JP, sans-serif"
@@ -39,14 +39,12 @@ export const Hero = () => (
       </Button>
     </Grid>
     <Image
-      src={heroBg}
-      placeholder="blur"
+      src="/images/hero-bg.jpg"
       alt="hero image"
       layout="fill"
       objectFit="cover"
-      quality={80}
-      priority
       className={styles?.heroImg}
+      // priority
     />
   </Grid>
 );
