@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { Hero } from "../src/components/Hero";
 import { Navbar } from "../src/components/Navbar";
 import { useState } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Link, Text } from "@chakra-ui/react";
 
 const About = dynamic(() =>
   import("../src/components/About").then((mod) => mod.About)
@@ -13,6 +13,10 @@ const About = dynamic(() =>
 
 const Features = dynamic(() =>
   import("../src/components/Features").then((mod) => mod.Features)
+);
+
+const Screenshots = dynamic(() =>
+  import("../src/components/Screenshots").then((mod) => mod.Screenshots)
 );
 
 export default function Home() {
@@ -46,11 +50,24 @@ export default function Home() {
           <Hero />
           <About />
           <Features />
+          <Screenshots />
         </main>
 
-        <footer className={styles.footer}>
-          © 2021 Safe Event Planner. All rights reserved.
-        </footer>
+        <Box bg="gray.800" px={8}>
+          <footer className={styles.footer}>
+            <Text color="gray.400">
+              © 2021 Safe Event Planner. All rights reserved.
+              <Link
+                color="blue.500"
+                href="https://safe-event-planner-api.herokuapp.com/privacy-policy"
+                isExternal
+                ml={2}
+              >
+                Privacy Policy
+              </Link>
+            </Text>
+          </footer>
+        </Box>
       </CustomScroll>
       {/*language=CSS*/}
       <style jsx global>

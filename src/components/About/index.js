@@ -13,7 +13,7 @@ export const About = () => {
   return (
     <Grid
       bg="primary.500"
-      bgGradient="radial(primary.500, #CAA353, primary.500)"
+      bgGradient="radial(primary.500, primary.600)"
       minH="40vh"
       pt={4}
       pb={8}

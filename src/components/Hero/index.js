@@ -28,7 +28,12 @@ export const Hero = () => (
         width={150}
         height={150}
       />
-      <Button size="lg" colorScheme="primary">
+      <Button
+        size="lg"
+        colorScheme="primary"
+        bgGradient="radial(primary.500, primary.600)"
+        color="white"
+      >
         <a
           href="https://mega.nz/file/McxyCIIa#HR138HWbUPfL96e8P7fP-5LByNT4IDsBFmuXRq9DscM"
           target="_blank"
