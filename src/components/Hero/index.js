@@ -34,7 +34,7 @@ export const Hero = () => (
           target="_blank"
           rel="noreferrer"
         >
-          Descarga la aplicacion aqui
+          <Text textShadow="md">Descarga la aplicacion aqui</Text>
         </a>
       </Button>
     </Grid>

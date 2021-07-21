@@ -1,4 +1,5 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import "react-custom-scroll/dist/customScroll.css";
 
 const colors = {
   primary: {
