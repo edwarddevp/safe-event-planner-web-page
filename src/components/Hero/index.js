@@ -35,7 +35,7 @@ export const Hero = () => (
         color="white"
       >
         <a
-          href="https://mega.nz/file/McxyCIIa#HR138HWbUPfL96e8P7fP-5LByNT4IDsBFmuXRq9DscM"
+          href="https://mega.nz/file/9RhwgYjK#e1qmO0rz-4UhsnGTDl3_yM1mAHh7cs9JoUlXWnUOHdM"
           target="_blank"
           rel="noreferrer"
         >
