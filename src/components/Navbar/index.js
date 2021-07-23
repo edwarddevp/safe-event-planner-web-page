@@ -5,10 +5,10 @@ import React from "react";
 export const Navbar = ({ headerBg }) => {
   return (
     <Flex
-      bg={headerBg}
+      bg={["transparent", , , headerBg]}
       h="72px"
       w="100%"
-      position="fixed"
+      position={["absolute", , , "fixed"]}
       zIndex="2"
       alignItems="center"
       px={4}
@@ -19,7 +19,7 @@ export const Navbar = ({ headerBg }) => {
         alt="Safe Event Planner logo"
         width={50}
         height={50}
-        layout="fixed"
+        // layout="fixed"
       />
       <Text
         ml={4}

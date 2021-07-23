@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { Hero } from "../src/components/Hero";
 import { Navbar } from "../src/components/Navbar";
 import { useState } from "react";
-import { Box, Link, Text } from "@chakra-ui/react";
+import { Box, Link, Text, chakra } from "@chakra-ui/react";
 
 const About = dynamic(() =>
   import("../src/components/About").then((mod) => mod.About)
@@ -42,10 +42,9 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <header>
+        <chakra.header position="relative">
           <Navbar headerBg={headerBg} />
-        </header>
-
+        </chakra.header>
         <main>
           <Hero />
           <About />
