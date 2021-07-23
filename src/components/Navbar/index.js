@@ -15,7 +15,7 @@ export const Navbar = ({ headerBg }) => {
       transition="all 0.3s ease"
     >
       <Image
-        src="/images/icon.png"
+        src="/images/icon.webp"
         alt="Safe Event Planner logo"
         width={50}
         height={50}

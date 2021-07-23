@@ -24,7 +24,7 @@ export default function Home() {
 
   const changeNavbarBg = (value) => {
     if (value > 100) {
-      setHeaderBg("rgb(0,0,0,0.8)");
+      setHeaderBg("rgb(0,0,0,0.9)");
     } else {
       setHeaderBg("transparent");
     }
@@ -53,9 +53,9 @@ export default function Home() {
           <Screenshots />
         </main>
 
-        <Box bg="gray.800" px={8}>
+        <Box bg="gray.800" px={[2, , 8]}>
           <footer className={styles.footer}>
-            <Text color="gray.400">
+            <Text color="gray.400" fontSize={["xs", , "sm", "md"]}>
               © 2021 Safe Event Planner. All rights reserved.
               <Link
                 color="blue.500"

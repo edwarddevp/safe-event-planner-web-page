@@ -1,7 +1,7 @@
 import { Container, Grid, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import AppScreenshots from "../../../public/images/app-screenshots.png";
+import AppScreenshots from "../../../public/images/app-screenshots.webp";
 
 export const Screenshots = () => {
   return (
@@ -20,10 +20,11 @@ export const Screenshots = () => {
       >
         <Text
           color="white"
-          fontSize="4xl"
+          fontSize={["2xl", , , "3xl"]}
           textShadow="md"
           fontWeight="500"
           fontFamily="Noto Sans JP, sans-serif"
+          textAlign="center"
           mb={8}
         >
           Capturas de la aplicación

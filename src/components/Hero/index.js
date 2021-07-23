@@ -23,7 +23,7 @@ export const Hero = () => (
         Safe Event Planner
       </Text>
       <Image
-        src="/images/icon.png"
+        src="/images/icon.webp"
         alt="Safe Event Planner logo"
         width={150}
         height={150}
@@ -44,7 +44,7 @@ export const Hero = () => (
       </Button>
     </Grid>
     <Image
-      src="/images/hero-bg.jpg"
+      src="/images/hero-bg.webp"
       alt="hero image"
       layout="fill"
       objectFit="cover"

@@ -3,15 +3,15 @@ import React from "react";
 
 export const FeatureItem = (props) => {
   return (
-    <Grid templateColumns="60px 1fr" gap={[4, , , , , 8]}>
+    <Grid templateColumns={["40px 1fr", , "60px 1fr"]} gap={[4, , , , , 8]}>
       <Box>
         <Grid bg="primary.500" borderRadius="md" p={2} placeItems="center">
-          <Icon as={props?.icon} color="white" w={10} h={10} />
+          <Icon as={props?.icon} color="white" w={[6, , 10]} h={[6, , 10]} />
         </Grid>
       </Box>
       <Grid templateRows="auto 1fr" gap={[2, , , , 4]}>
         <Text
-          fontSize="2xl"
+          fontSize={["xl", , , "2xl"]}
           textShadow="md"
           fontWeight="500"
           fontFamily="Noto Sans JP, sans-serif"
@@ -20,7 +20,7 @@ export const FeatureItem = (props) => {
         </Text>
         <Text
           wordBreak="break-word"
-          fontSize={["md", , , , "lg"]}
+          fontSize={["sm", , "md", , "lg"]}
           textShadow="md"
           fontWeight="500"
           fontFamily="Noto Sans JP, sans-serif"

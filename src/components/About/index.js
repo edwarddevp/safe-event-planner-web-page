@@ -4,7 +4,7 @@ import React from "react";
 export const About = () => {
   const descriptionStyles = {
     color: "white",
-    fontSize: "lg",
+    fontSize: ["sm", , "md", "lg"],
     textShadow: "xl",
     fontWeight: "500",
     fontFamily: "Noto Sans JP, sans-serif",
@@ -21,7 +21,7 @@ export const About = () => {
       <Container d="grid" placeItems="center" justifyContent="center">
         <Text
           color="white"
-          fontSize="4xl"
+          fontSize={["2xl", , , "3xl"]}
           textShadow="md"
           fontWeight="500"
           fontFamily="Noto Sans JP, sans-serif"

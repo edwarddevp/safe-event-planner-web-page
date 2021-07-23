@@ -4,7 +4,7 @@ import React from "react";
 import { MdEvent, MdPhoneAndroid } from "react-icons/md";
 import { FaShieldAlt } from "react-icons/fa";
 import { FeatureItem } from "../FeatureItem";
-import FeatureImg from "../../../public/images/feature-img.jpg";
+import FeatureImg from "../../../public/images/feature-img.webp";
 
 export const Features = () => {
   const features = [
@@ -28,9 +28,9 @@ export const Features = () => {
     },
   ];
   return (
-    <Grid gap={[8, , , , , 16]} p={[4, , , 16, , 24]}>
+    <Grid gap={[8, , , , , 16]} px={[4, , , 16, , 24]} py={[12, , , 16, , 24]}>
       <Text
-        fontSize="3xl"
+        fontSize={["2xl", , , "3xl"]}
         textShadow="md"
         fontWeight="500"
         fontFamily="Noto Sans JP, sans-serif"
